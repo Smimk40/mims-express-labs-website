@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Mims Express Labs LLC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-white">
+
+<!-- HEADER -->
+<nav class="nav-top">
+  <ul class="nav-list-top">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="billing-faq.html">Billing FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="header">
+  <div class="site-title">
+    <a href="index.html" class="brand">Mims Express Labs</a>
+    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
+  </div>
+</header>
+  <div class="page-banner"><img src="images/photo-2.svg" alt="About Mims Express Labs team"></div>
+
+<!-- ABOUT HERO -->
+<section class="section">
+  <h1 class="page-title">About Mims Express Labs LLC</h1>
+  <p class="page-subtitle">
+    Reliable, professional mobile phlebotomy services you can trust.
+  </p>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="section light">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>
+        Mims Express Labs LLC is a mobile phlebotomy company
+        dedicated to providing safe, convenient, and accurate specimen
+        collection services. We serve nursing homes, clinics, physicians,
+        and private patients with professionalism and care. With 23 years of experience,
+        we have established ourselves as a trusted leader in mobile phlebotomy services.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to deliver dependable mobile phlebotomy services
+        that improve access to laboratory testing while maintaining the
+        highest standards of patient care, safety, and compliance.
+      </p>
+
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Licensed and trained phlebotomy professionals</li>
+        <li>HIPAA-compliant and privacy-focused</li>
+        <li>Reliable scheduling and prompt service</li>
+        <li>Experienced with pediatric,geriatric and long-term care patients</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="section cta">
+  <h2>Ready to Work With Us?</h2>
+  <div class="buttons">
+    <a href="tel:4041234567" class="btn blue">Call Now</a>
+    <a href="contact.html" class="btn blue">Request Mobile Phlebotomy</a>
+    <a href="#" class="btn blue schedule-draw">Schedule a Draw</a>
+    <a href="facility-inquiry.html" class="btn green">Facility Inquiry</a>
+  </div>
+
+  <!-- Facility Inquiry Modal -->
+  <div class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <h3>Facility Inquiry</h3>
+      <form id="facility-form">
+        <div class="form-row">
+          <div style="flex:1">
+            <label>Facility Name</label>
+            <input name="facility" type="text" placeholder="Facility or Organization" />
+          </div>
+          <div style="flex:1">
+            <label>Contact Name</label>
+            <input name="contact" type="text" placeholder="Contact person" />
+          </div>
+        </div>
+        <div class="form-row" style="margin-top:10px">
+          <div style="flex:1">
+            <label>Phone</label>
+            <input name="phone" type="text" placeholder="Phone number" />
+          </div>
+          <div style="flex:1">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Email address" />
+          </div>
+        </div>
+        <div style="margin-top:10px">
+          <label>Address</label>
+          <input name="address" type="text" placeholder="Street, City, State" />
+        </div>
+        <div style="margin-top:10px">
+          <label>Services Needed / Notes</label>
+          <textarea name="notes" placeholder="Describe services, volume, schedule"></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn green">Send Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Schedule a Draw Modal -->
+  <div class="modal-backdrop schedule-backdrop" aria-hidden="true">
+    <div class="modal schedule-modal" role="dialog" aria-modal="true">
+      <h3>Schedule a Draw</h3>
+      <form id="schedule-form">
+        <div class="form-row">
+          <div style="flex:1">
+            <label>Your Name</label>
+            <input name="name" type="text" placeholder="Full name" />
+          </div>
+          <div style="flex:1">
+            <label>Phone</label>
+            <input name="phone" type="text" placeholder="Phone number" />
+          </div>
+        </div>
+        <div class="form-row" style="margin-top:10px">
+          <div style="flex:1">
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Email address" />
+          </div>
+          <div style="flex:1">
+            <label>Preferred Date</label>
+            <input name="date" type="date" />
+          </div>
+        </div>
+        <div style="margin-top:10px">
+          <label>Preferred Time</label>
+          <input name="time" type="time" />
+        </div>
+        <div style="margin-top:10px">
+          <label>Notes</label>
+          <textarea name="notes" placeholder="Additional info (address, accessibility, etc.)"></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn green">Request Appointment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © Mims Express Labs LLC | Mobile Phlebotomy Services<br>
+    HIPAA Compliant | Serving Georgia
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Facility Inquiry — Mims Express Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav-top">
+  <ul class="nav-list-top">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="billing-faq.html">Billing FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="site-title">
+    <a href="index.html" class="brand">Mims Express Labs</a>
+    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
+  </div>
+</header>
+  <div class="page-banner"><img src="images/photo-5.svg" alt="Facility inquiry"></div>
+
+<main class="contact-section">
+  <div class="container">
+    <h1>Facility Inquiry</h1>
+    <p>Please complete the form below to request more information or a service quote for your facility. Submitting will open an email draft to karen@mimsexpresslabs.com.</p>
+
+    <form id="facility-form" class="contact-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="facility">Facility / Organization</label>
+          <input id="facility" name="facility" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Name</label>
+          <input id="contact" name="contact" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-group full">
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text">
+        </div>
+        <div class="form-group full">
+          <label for="notes">Services Needed / Notes</label>
+          <textarea id="notes" name="notes" placeholder="Describe services, volume, schedule" rows="6"></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn green">Send Inquiry</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>© Mims Express Labs LLC | HIPAA Compliant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

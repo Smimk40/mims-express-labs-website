@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-white">
+
+<nav class="nav-top">
+  <ul class="nav-list-top">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="billing-faq.html">Billing FAQ</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="header">
+  <div class="site-title">
+    <a href="index.html" class="brand">Mims Express Labs</a>
+    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
+  </div>
+</header>
+  <div class="page-banner"><img src="images/photo-5.svg" alt="Contact Mims Express Labs"></div>
+
+<main class="section contact-section">
+  <div class="container">
+    <h1 class="page-title">Request Mobile Phlebotomy</h1>
+    <p class="page-subtitle">Fill out the form below and we'll contact you to confirm scheduling.</p>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(xxx) xxx-xxxx">
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred date</label>
+          <input id="date" name="date" type="date">
+        </div>
+        <div class="form-group full">
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text" placeholder="Street, City, State">
+        </div>
+        <div class="form-group full">
+          <label for="notes">Details / Notes</label>
+          <textarea id="notes" name="notes" placeholder="Tell us best times, number of patients, accessibility, etc."></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn green">Submit Request</button>
+        <a href="tel:6789720444" class="btn blue">Call Now</a>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>© Mims Express Labs LLC | Mobile Phlebotomy Services</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
