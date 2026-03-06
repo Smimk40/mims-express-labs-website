@@ -1,135 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Mims Express Labs LLC | Mobile Phlebotomy</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mims Express Labs</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+      background: linear-gradient(180deg, #eaf3fb 0%, #f5f9fc 100%);
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+    .main-header {
+      background: #fff;
+      border-radius: 24px;
+      margin: 24px auto 0 auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 24px rgba(60,120,200,0.07);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    .main-header .brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3f8ecb;
+      letter-spacing: 1px;
+    }
+    .main-header nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .main-header nav a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 8px 0;
+      transition: color 0.2s;
+    }
+    .main-header nav a.active, .main-header nav a:hover {
+      color: #3f8ecb;
+    }
+    .main-header .book-btn {
+      background: #3f8ecb;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 28px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-left: 24px;
+      box-shadow: 0 2px 8px rgba(63,142,203,0.08);
+    }
+    .hero-section {
+      background: linear-gradient(120deg, #eaf3fb 60%, #dbeafe 100%);
+      border-radius: 32px;
+      max-width: 1200px;
+      margin: 32px auto 0 auto;
+      padding: 48px 40px 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 420px;
+      box-shadow: 0 8px 32px rgba(63,142,203,0.10);
+    }
+    .hero-content {
+      max-width: 540px;
+    }
+    .hero-content h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin: 0 0 18px 0;
+      color: #3f8ecb;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 32px;
+    }
+    .hero-content .hero-btns {
+      display: flex;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .hero-content .hero-btns .main-btn {
+      background: #3f8ecb;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 14px 32px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(63,142,203,0.10);
+      transition: background 0.2s;
+    }
+    .hero-content .hero-btns .main-btn.secondary {
+      background: #fff;
+      color: #3f8ecb;
+      border: 1.5px solid #3f8ecb;
+    }
+    .hero-content .mini-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 10px 18px;
+      box-shadow: 0 2px 8px rgba(63,142,203,0.07);
+      font-size: 1rem;
+      margin-bottom: 18px;
+      width: fit-content;
+    }
+    .hero-content .mini-info .icon {
+      font-size: 1.3rem;
+      color: #3f8ecb;
+    }
+    .hero-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .hero-image img {
+      width: 420px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(63,142,203,0.18);
+      background: #fff;
+      border: 4px solid #3f8ecb;
+    }
+    .call-box {
+      position: absolute;
+      right: 40px;
+      bottom: 32px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 8px rgba(63,142,203,0.10);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 1.1rem;
+      color: #3f8ecb;
+      font-weight: 600;
+    }
+    .call-box .phone {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #222;
+      margin-left: 8px;
+    }
+    @media (max-width: 900px) {
+      .main-header, .hero-section {
+        max-width: 98vw;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .hero-section {
+        flex-direction: column;
+        min-height: unset;
+        padding: 32px 10px 24px 10px;
+      }
+      .hero-image {
+        margin-top: 32px;
+        justify-content: center;
+      }
+      .call-box {
+        position: static;
+        margin-top: 18px;
+      }
+    }
+  </style>
+
 </head>
-<body class="top-lighter">
 
-<nav class="nav-top">
-  <ul class="nav-list-top">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="facilities.html">Facilities</a></li>
-    <li><a href="billing-faq.html">Billing FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+<body>
 
-<header>
-  <div class="site-title">
-    <a href="index.html" class="brand">Mims Express Labs</a>
-    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
-  </div>
-</header>
-
-<section class="hero">
-  <section class="blue-ribbon">
-    <h2>Quick Actions</h2>
-    <p>Select an option below to request service or schedule a draw.</p>
-  </section>
-
-  <h1>Mobile Phlebotomy Services</h1>
-  <p>Professional blood draw services for offices, nursing homes and in-home patients.</p>
-
-  <section class="inquiry-section" aria-label="Forms">
-    <div class="inquiry-grid">
-      <div class="inquiry-card">
-        <h3>Facility Inquiry</h3>
-        <form id="facility-form">
-          <div class="form-row">
-            <div style="flex:1">
-              <label>Facility Name</label>
-              <input name="facility" type="text" placeholder="Facility or Organization" />
-            </div>
-            <div style="flex:1">
-              <label>Contact Name</label>
-              <input name="contact" type="text" placeholder="Contact person" />
-            </div>
-          </div>
-          <div class="form-row" style="margin-top:10px">
-            <div style="flex:1">
-              <label>Phone</label>
-              <input name="phone" type="text" placeholder="Phone number" />
-            </div>
-            <div style="flex:1">
-              <label>Email</label>
-              <input name="email" type="email" placeholder="Email address" />
-            </div>
-          </div>
-          <div style="margin-top:10px">
-            <label>Address</label>
-            <input name="address" type="text" placeholder="Street, City, State" />
-          </div>
-          <div style="margin-top:10px">
-            <label>Services Needed / Notes</label>
-            <textarea name="notes" placeholder="Describe services, volume, schedule"></textarea>
-          </div>
-          <div class="actions">
-            <button type="submit" class="btn green">Send Inquiry</button>
-          </div>
-        </form>
+<header class="main-header">
+    <span class="brand">Mims Express Labs</span>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="panels.html">Panels</a>
+      <a href="doctors-order.html">Provider Orders</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="book-btn">Book Appointment</a>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="mini-info"><span class="icon">★</span> #1 Mobile Lab Service in Georgia</div>
+      <h1>We bring professional preventive lab testing to you.</h1>
+      <p>Delivering comprehensive blood testing and health screening through our innovative mobile platform that brings care to your home or facility.</p>
+      <div class="hero-btns">
+        <a href="panels.html"><button class="main-btn">Get Started Now</button></a>
+        <button class="main-btn secondary">Book Appointment</button>
+        <a href="doctors-order.html" class="main-btn" style="text-align:center;">Provider Orders</a>
       </div>
-
-      <div class="inquiry-card">
-        <h3>Schedule a Draw</h3>
-        <form id="schedule-form">
-          <div class="form-row">
-            <div style="flex:1">
-              <label>Your Name</label>
-              <input name="name" type="text" placeholder="Full name" />
-            </div>
-            <div style="flex:1">
-              <label>Phone</label>
-              <input name="phone" type="text" placeholder="Phone number" />
-            </div>
-          </div>
-          <div class="form-row" style="margin-top:10px">
-            <div style="flex:1">
-              <label>Email</label>
-              <input name="email" type="email" placeholder="Email address" />
-            </div>
-            <div style="flex:1">
-              <label>Preferred Date</label>
-              <input name="date" type="date" />
-            </div>
-          </div>
-          <div style="margin-top:10px">
-            <label>Preferred Time</label>
-            <input name="time" type="time" />
-          </div>
-          <div style="margin-top:10px">
-            <label>Notes</label>
-            <textarea name="notes" placeholder="Additional info (address, accessibility, etc.)"></textarea>
-          </div>
-          <div class="actions">
-            <button type="submit" class="btn green">Request Appointment</button>
-          </div>
-        </form>
+      <div class="mini-info">
+        <span class="icon">👩‍⚕️</span> experienced phlebotomists across Georgia
       </div>
     </div>
+    <div class="hero-image">
+      <img src="images/doctor-placeholder.png" alt="Mims Express Labs medical professional">
+    </div>
+    <div class="call-box" style="margin-top: 24px; text-align: center;">
+      24 hour service <span class="phone">(678) 972-0444</span>
+    </div>
+      <!-- Add your content below -->
+
+    </div>
   </section>
-</section>
 
-<section class="insurance-ribbon">
-  <h2>Accepted Insurance</h2>
-  <p>We work with all major insurance providers to make our services accessible to you.</p>
-</section>
-
-<section class="section" aria-label="Quick actions">
-  <div class="buttons">
-    <a href="tel:6789720444" class="btn blue">Call Now</a>
-    <a href="contact.html" class="btn blue">Request Mobile Phlebotomy</a>
-    <a href="#" class="btn blue schedule-draw">Schedule a Draw</a>
-    <a href="facility-inquiry.html" class="btn green">Facility Inquiry</a>
-  </div>
-</section>
-
-<footer>
-  <p>© Mims Express Labs LLC | HIPAA Compliant</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
+
+</html>

@@ -2,178 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us | Mims Express Labs LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Mims Express Labs</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .about-hero {
+      background: linear-gradient(120deg, #eaf3fb 60%, #dbeafe 100%);
+      padding: 70px 0 40px 0;
+      text-align: center;
+    }
+    .about-hero h1 {
+      color: #3f8ecb;
+      font-size: 3.2rem;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .about-hero p {
+      color: #444;
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 24px auto;
+    }
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(63,142,203,0.10);
+      padding: 48px 36px 40px 36px;
+      margin-top: -40px;
+      position: relative;
+      z-index: 2;
+    }
+    .about-content h2 {
+      color: #2a4d6c;
+      font-size: 2rem;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+    .about-content p {
+      color: #444;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .about-content ul {
+      color: #3f8ecb;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+    .about-content li {
+      margin-bottom: 8px;
+    }
+    @media (max-width: 700px) {
+      .about-content { padding: 24px 10px 24px 10px; }
+      .about-hero h1 { font-size: 2.1rem; }
+    }
+  </style>
 </head>
-<body class="page-white">
-
-<!-- HEADER -->
-<nav class="nav-top">
-  <ul class="nav-list-top">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html" class="active">About Us</a></li>
-    <li><a href="facilities.html">Facilities</a></li>
-    <li><a href="billing-faq.html">Billing FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<header class="header">
-  <div class="site-title">
-    <a href="index.html" class="brand">Mims Express Labs</a>
-    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
-  </div>
-</header>
-  <div class="page-banner"><img src="images/photo-2.svg" alt="About Mims Express Labs team"></div>
-
-<!-- ABOUT HERO -->
-<section class="section">
-  <h1 class="page-title">About Mims Express Labs LLC</h1>
-  <p class="page-subtitle">
-    Reliable, professional mobile phlebotomy services you can trust.
-  </p>
-</section>
-
-<!-- ABOUT CONTENT -->
-<section class="section light">
-  <div class="about-container">
-
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>
-       <p></p> Karen Mims is the founder of Mims Express Labs and a passionate advocate for preventative healthcare.</p> 
-        
-       <p>After personally battling Type 2 diabetes and Stage 3 breast cancer, Karen discovered the critical importance of early detection. Her journey revealed how many adults delay routine lab work due to busy schedules, transportation challenges, or lack of awareness.</p> 
-        
-        <p>Determined to make a difference, she launched Mims Express Labs to bring mobile phlebotomy services directly to the community- removing obstacles and promoting proactive health monitoring.
-        
-        <p>Karen's mission is deeply personal: help others catch disease before it progresses.</p> 
-        
-        <p>Through prevention-focused testing, education, and community outreach, she is committed to reducing avoidable suffering and empowering individuals to take charge of their health.
-      </p>
-
-      <h2>Our Mission</h2>
-      <p>
-        Our mission is to deliver dependable mobile phlebotomy services
-        that improve access to laboratory testing while maintaining the
-        highest standards of patient care, safety, and compliance.
-      </p>
-
-      <h2>Why Choose Us</h2>
-      <ul class="about-list">
-        <li>Licensed and trained phlebotomy professionals</li>
-        <li>HIPAA-compliant and privacy-focused</li>
-        <li>Reliable scheduling and prompt service</li>
-        <li>Experienced with pediatric, geriatric, and long-term care patients</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- CALL TO ACTION -->
-<section class="section cta">
-  <h2>Ready to Work With Us?</h2>
-  <div class="buttons two-row">
-    <div class="button-row">
-      <a href="tel:4041234567" class="btn blue">Call Now</a>
-      <a href="contact.html" class="btn blue">Request Mobile Phlebotomy</a>
-    </div>
-    <div class="button-row">
-      <a href="#" class="btn blue schedule-draw">Schedule a Draw</a>
-      <a href="facility-inquiry.html" class="btn green">Facility Inquiry</a>
-    </div>
-  </div>
-
-  <!-- Facility Inquiry Modal -->
-  <div class="modal-backdrop" aria-hidden="true">
-    <div class="modal" role="dialog" aria-modal="true">
-      <h3>Facility Inquiry</h3>
-      <form id="facility-form">
-        <div class="form-row">
-          <div style="flex:1">
-            <label>Facility Name</label>
-            <input name="facility" type="text" placeholder="Facility or Organization" />
-          </div>
-          <div style="flex:1">
-            <label>Contact Name</label>
-            <input name="contact" type="text" placeholder="Contact person" />
-          </div>
-        </div>
-        <div class="form-row" style="margin-top:10px">
-          <div style="flex:1">
-            <label>Phone</label>
-            <input name="phone" type="text" placeholder="Phone number" />
-          </div>
-          <div style="flex:1">
-            <label>Email</label>
-            <input name="email" type="email" placeholder="Email address" />
-          </div>
-        </div>
-        <div style="margin-top:10px">
-          <label>Address</label>
-          <input name="address" type="text" placeholder="Street, City, State" />
-        </div>
-        <div style="margin-top:10px">
-          <label>Services Needed / Notes</label>
-          <textarea name="notes" placeholder="Describe services, volume, schedule"></textarea>
-        </div>
-        <div class="actions">
-          <button type="submit" class="btn green">Send Inquiry</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Schedule a Draw Modal -->
-  <div class="modal-backdrop schedule-backdrop" aria-hidden="true">
-    <div class="modal schedule-modal" role="dialog" aria-modal="true">
-      <h3>Schedule a Draw</h3>
-      <form id="schedule-form">
-        <div class="form-row">
-          <div style="flex:1">
-            <label>Your Name</label>
-            <input name="name" type="text" placeholder="Full name" />
-          </div>
-          <div style="flex:1">
-            <label>Phone</label>
-            <input name="phone" type="text" placeholder="Phone number" />
-          </div>
-        </div>
-        <div class="form-row" style="margin-top:10px">
-          <div style="flex:1">
-            <label>Email</label>
-            <input name="email" type="email" placeholder="Email address" />
-          </div>
-          <div style="flex:1">
-            <label>Preferred Date</label>
-            <input name="date" type="date" />
-          </div>
-        </div>
-        <div style="margin-top:10px">
-          <label>Preferred Time</label>
-          <input name="time" type="time" />
-        </div>
-        <div style="margin-top:10px">
-          <label>Notes</label>
-          <textarea name="notes" placeholder="Additional info (address, accessibility, etc.)"></textarea>
-        </div>
-        <div class="actions">
-          <button type="submit" class="btn green">Request Appointment</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>
-    © Mims Express Labs LLC | Mobile Phlebotomy Services<br>
-    HIPAA Compliant | Serving Georgia
-  </p>
-</footer>
-
+<body>
+  <header class="main-header">
+    <span class="brand">Mims Express Labs</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="panels.html">Panels</a>
+      <a href="doctors-order.html">Provider Orders</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="book-btn">Book Appointment</a>
+    </nav>
+  </header>
+  <section class="about-hero">
+    <h1>About Mims Express Labs</h1>
+    <p>
+      Bringing professional, compassionate mobile lab testing to your home or facility. Our mission is to make preventive health care accessible, convenient, and reliable for everyone in our community.
+    </p>
+  </section>
+  <section class="about-content">
+    <h2>Our Story</h2>
+    <p>
+      After experiencing diabetes and stage 3 breast cancer, our founder realized how important early testing can be. Many diseases develop silently before symptoms appear. Mims Express Labs was created to help people detect health problems earlier through preventive lab testing.
+    </p>
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Licensed, experienced phlebotomists</li>
+      <li>Mobile service—testing at your home, office, or facility</li>
+      <li>Fast, secure results</li>
+      <li>Compassionate, patient-centered care</li>
+      <li>HIPAA-compliant and privacy-focused</li>
+    </ul>
+  </section>
+  <footer>
+    <p>Mims Express Labs | Mobile Preventive Lab Testing</p>
+  </footer>
 </body>
 </html>

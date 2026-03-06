@@ -2,125 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services | Mims Express Labs LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Mims Express Labs</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .services-hero {
+      background: linear-gradient(120deg, #eaf3fb 60%, #dbeafe 100%);
+      padding: 80px 0 60px 0;
+      text-align: center;
+    }
+    .services-hero h1 {
+      color: #3f8ecb;
+      font-size: 4.2rem;
+      margin-bottom: 28px;
+      letter-spacing: 1px;
+    }
+    .services-hero p {
+      color: #444;
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto 32px auto;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px 80px 30px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(63,142,203,0.13);
+      padding: 48px 32px 40px 32px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .service-card:hover {
+      box-shadow: 0 12px 40px rgba(63,142,203,0.18);
+    }
+    .service-icon {
+      font-size: 3.5rem;
+      margin-bottom: 28px;
+      color: #3f8ecb;
+    }
+    .service-title {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+      color: #2a4d6c;
+    }
+    .service-desc {
+      color: #444;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+  </style>
 </head>
-<body class="page-white">
-
-<!-- HEADER -->
-<nav class="nav-top">
-  <ul class="nav-list-top">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html" class="active">Services</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="facilities.html">Facilities</a></li>
-    <li><a href="billing-faq.html">Billing FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<header class="header">
-  <div class="site-title">
-    <a href="index.html" class="brand">Mims Express Labs</a>
-    <div class="site-phone"><a href="tel:6789720444">(678) 972-0444</a></div>
-  </div>
-</header>
-
-<!-- SERVICES HERO -->
-<section class="section">
-  <h1 class="page-title">Our Services</h1>
-  <p class="page-subtitle">
-    Professional mobile phlebotomy services delivered with care, accuracy,
-    and compliance throughout various locations.
-  </p></section>
-
-<!-- SERVICES LIST -->
-<section class="section light">
-  <div class="cards">
-
-    <div class="card">
-      <h3>Specialty & Wellness Blood Panels</h3>
-      <p>
-        Comprehensive panels tailored for preventive care, wellness tracking,
-        and specialized diagnostic insights.
-      </p>
+<body>
+  <header class="main-header">
+    <span class="brand">Mims Express Labs</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="panels.html">Panels</a>
+      <a href="doctors-order.html">Provider Orders</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="book-btn">Book Appointment</a>
+    </nav>
+  </header>
+  <section class="services-hero">
+    <h1>Our Services</h1>
+    <p>
+      Mims Express Labs delivers convenient, professional mobile blood testing and preventive health screenings. We bring the lab to your home, office, or facility—making it easier than ever to take charge of your health.
+    </p>
+  </section>
+  <section class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🩸</div>
+      <div class="service-title">Mobile Blood Draws</div>
+      <div class="service-desc">Certified phlebotomists collect your blood samples at your location for maximum comfort and convenience.</div>
     </div>
-
-    <div class="card">
-      <h3>Mobile Blood Draws</h3>
-      <p>
-        Convenient specimen collection performed at homes, workplaces,
-        and healthcare facilities by licensed phlebotomists.
-      </p>
+    <div class="service-card">
+      <div class="service-icon">🧬</div>
+      <div class="service-title">Preventive Health Panels</div>
+      <div class="service-desc">Comprehensive screenings for diabetes, cancer risk, kidney, heart, and metabolic health—catching issues early.</div>
     </div>
-
-    <div class="card">
-      <h3>Nursing Homes & Long-Term Care</h3>
-      <p>
-        Reliable recurring lab services for nursing homes, assisted living,
-        and long-term care facilities.
-      </p>
+    <div class="service-card">
+      <div class="service-icon">🏥</div>
+      <div class="service-title">Facility Partnerships</div>
+      <div class="service-desc">On-site phlebotomy for assisted living, hospice, clinics, and home health agencies. Reliable, HIPAA-compliant service.</div>
     </div>
-
-    <div class="card">
-      <h3>Homebound & Private Patients</h3>
-      <p>
-        Safe and discreet blood draws for elderly, disabled,
-        and homebound patients.
-      </p>
+    <div class="service-card">
+      <div class="service-icon">📄</div>
+      <div class="service-title">Fast Results</div>
+      <div class="service-desc">Most results delivered securely within 24-48 hours. We coordinate with your provider for seamless care.</div>
     </div>
-
-    <div class="card">
-      <h3>STAT & After-Hours Services</h3>
-      <p>
-        Priority and after-hours collections available for urgent
-        or time-sensitive lab testing.
-      </p>
+    <div class="service-card">
+      <div class="service-icon">👩‍⚕️</div>
+      <div class="service-title">Experienced Team</div>
+      <div class="service-desc">Our team includes licensed, background-checked professionals with years of experience in mobile phlebotomy.</div>
     </div>
-
-    <div class="card">
-      <h3>Specimen Processing & Transport</h3>
-      <p>
-        Proper labeling, handling, and delivery of specimens
-        to partner laboratories in compliance with regulations.
-      </p>
+    <div class="service-card">
+      <div class="service-icon">📅</div>
+      <div class="service-title">Flexible Scheduling</div>
+      <div class="service-desc">Book appointments at times that work for you—mornings, evenings, and weekends available.</div>
     </div>
-
-    <div class="card">
-      <h3>Genetic Testing</h3>
-      <p>
-        Convenient specimen collection for genetic testing with careful handling
-        and secure transport to partner laboratories.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>RPP Testing</h3>
-      <p>
-        Respiratory pathogen panel (RPP) specimen collection with prompt delivery
-        for accurate and timely results.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CALL TO ACTION -->
-<section class="section cta">
-  <h2>Need Mobile Phlebotomy Services?</h2>
-  <div class="buttons">
-    <a href="tel:4704974015" class="btn blue">Call Now</a>
-    <a href="contact.html" class="btn blue">Request Service</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>
-    © Mims Express Labs LLC | Mobile Phlebotomy Services<br>
-    HIPAA Compliant | Serving Spalding, Henry, Fayette , and Clayton Counties
-  </p>
-</footer>
-
+  </section>
+  <footer>
+    <p>Mims Express Labs | Mobile Preventive Lab Testing</p>
+  </footer>
 </body>
 </html>
