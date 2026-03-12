@@ -12,57 +12,15 @@
 
 <style>
     body {
-      background: linear-gradient(180deg, #eaf3fb 0%, #f5f9fc 100%);
+      background: linear-gradient(180deg, #eaf3fb 0%, #f5f9fc 100%),
+        url('images/tubes.png') repeat;
+      background-size: cover, 400px;
+      background-blend-mode: lighten;
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: #222;
     }
-    .main-header {
-      background: #fff;
-      border-radius: 24px;
-      margin: 24px auto 0 auto;
-      max-width: 1200px;
-      box-shadow: 0 4px 24px rgba(60,120,200,0.07);
-      padding: 0 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 80px;
-    }
-    .main-header .brand {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #3f8ecb;
-      letter-spacing: 1px;
-    }
-    .main-header nav {
-      display: flex;
-      gap: 32px;
-      align-items: center;
-    }
-    .main-header nav a {
-      color: #222;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-      padding: 8px 0;
-      transition: color 0.2s;
-    }
-    .main-header nav a.active, .main-header nav a:hover {
-      color: #3f8ecb;
-    }
-    .main-header .book-btn {
-      background: #3f8ecb;
-      color: #fff;
-      border: none;
-      border-radius: 24px;
-      padding: 12px 28px;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-left: 24px;
-      box-shadow: 0 2px 8px rgba(63,142,203,0.08);
-    }
+    /* Main header styles are now unified in style.css for all pages */
     .hero-section {
       background: linear-gradient(120deg, #eaf3fb 60%, #dbeafe 100%);
       border-radius: 32px;
@@ -191,12 +149,11 @@
 <body>
 
 <header class="main-header">
-    <span class="brand">Mims Express Labs</span>
+    <img src="images/doctor-placeholder.png" alt="Mims Express Labs logo" class="main-logo" style="height:64px; width:auto; max-width:260px; margin-right:32px;">
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
       <a href="panels.html">Panels</a>
       <a href="doctors-order.html">Provider Orders</a>
       <a href="contact.html">Contact</a>
